@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rádio ao Vivo</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #333;
+        margin-top: 20px;
+      }
+
+      .audio-player {
+        display: inline-block;
+        background-color: #e77600; /* Cor de fundo */
+        padding: 20px;
+        border-radius: 10px; /* Borda arredondada */
+        border: 3px solid #333; /* Borda */
+      }
+
+      audio {
+        width: 300px; /* Largura personalizada */
+        border: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ouça nossa rádio ao vivo!</h1>
+    <div class="audio-player">
+      <audio controls>
+        <source
+          src="https://cast4.hoost.com.br:20214/stream"
+          type="audio/mpeg"
+        />
+        Seu navegador não suporta a reprodução de áudio.
+      </audio>
+    </div>
+    <script>
+      const radio = document.querySelector("audio");
+
+      // Iniciar o áudio automaticamente ao carregar a página
+      window.onload = function () {
+        radio.play();
+      };
+    </script>
+  </body>
+</html>
