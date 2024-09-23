@@ -24,7 +24,7 @@ jQuery(document).ready(function (a) {
           title: "Rádio ON",
           artist: "Tocando emoções que conectam",
           mp3: "https://cast4.hoost.com.br:20214/stream",
-          poster: "./js/mp3/browse/playlist-5.jpg",
+          poster: "./js/mp3/browse/1077.png",
         },
       ],
       {
@@ -223,7 +223,7 @@ jQuery(document).ready(function (a) {
         title: "Rádio ON",
         artist: "Tocando emoções que conectam",
         mp3: "https://cast4.hoost.com.br:20214/stream",
-        poster: "./js/mp3/browse/playlist-5.jpg",
+        poster: "./js/mp3/browse/1077.png",
       },
     ]),
     a(window).imagesLoaded(function () {
