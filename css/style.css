@@ -1,10 +1,11 @@
 /*-------------------------------------  
-	Template: Tunein
-	Author : Webstrot
-	Copyright © 2019-20	
----------------------------------------
-    
-    CSS INDEX
+bg-colors
+
+f9d045	
+#0f0e37
+-------------------------
+
+CSS INDEX
     ===================
 	
     1. BODY
@@ -1501,10 +1502,6 @@ span.comboTreeItemTitle {
 .slider-area .carousel-inner {
   overflow: visible;
 }
-.content_img_wrapper {
-  position: absolute;
-  right: -384px;
-}
 .slider_headphone {
   position: absolute;
   left: 40px;
@@ -2554,11 +2551,9 @@ ul.tranding_more_option li a .opt_icon i:before {
 /**-------- download wrapper css ----------**/
 .download_wrapper {
   width: 100%;
-  float: left;
-  background-image: url(../images/download_bg.jpg);
   height: 100%;
-  background-position: center 0;
-  background-size: cover;
+  float: left;
+  background-color: #cfac18;
   position: relative;
   padding: 100px 0;
 }
@@ -7037,7 +7032,7 @@ span.ovrly_text2 {
 .index3_bottom_footer,
 .index3_lang_wrapper .lang_list_checkbox li:hover,
 .index3_main_header .crm_message_dropbox_wrapper .nice-select .list {
-  background: #f9d045;
+  background: #0f0e37;
   /* home header */
 }
 .index3_sidebar,
@@ -7063,9 +7058,9 @@ span.ovrly_text2 {
 .index3_lang_wrapper .modal-content,
 .index3_login_modal .modal-content,
 .index3_search_bar .res_search_box {
-  background: #0f0e37;
+  background: #cfac18;
 }
-
+/* cor do corpo projeto */
 .index3_slider_wrapper
   .carousel-inner
   .carousel-item
@@ -7125,7 +7120,7 @@ span.ovrly_text2 {
 .index3_login_modal .login_remember_box .forget_password,
 .index3_search_bar .res_search_bar i:before,
 .index3_search_bar .notify_para {
-  color: #000 !important;
+  color: #fff !important;
 }
 .index3_treanding_wraaper .treanding_song_slider,
 .index3_featured_song_slider,
@@ -7140,7 +7135,7 @@ span.ovrly_text2 {
   p
   a,
 .index3_main_header .crm_mess_all_main_box_wrapper p a {
-  color: #fa5b41;
+  color: #fff;
 }
 .index3_quick_song_list li a,
 .index3_footer_wrapper .abotus_content p,
@@ -7169,8 +7164,10 @@ span.ovrly_text2 {
 .index3_lang_wrapper .lang_list_checkbox li {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+/* cor do player */
 .index3_adoins_wrapper .adonis-player-horizontal {
-  background: #0f0e37;
+  background: #cfac18;
 }
 .index3_adoins_wrapper .jp-seek-bar:before,
 .adonis-playlist-player .jp-seek-bar:before {
@@ -7678,3 +7675,18 @@ span.ovrly_text2 {
 .index4_top_songs_wrapper .various_artist_text a {
   color: rgba(255, 255, 255, 0.7) !important;
 }
+.slider-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  z-index: 0;
+}
+
