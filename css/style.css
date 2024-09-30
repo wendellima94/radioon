@@ -3,6 +3,7 @@ bg-colors
 
 f9d045	
 #0f0e37
+#f1db33
 -------------------------
 
 CSS INDEX
@@ -2553,7 +2554,7 @@ ul.tranding_more_option li a .opt_icon i:before {
   width: 100%;
   height: 100%;
   float: left;
-  background-color: #cfac18;
+  background-color: #f1db33;
   position: relative;
   padding: 100px 0;
 }
@@ -7058,7 +7059,7 @@ span.ovrly_text2 {
 .index3_lang_wrapper .modal-content,
 .index3_login_modal .modal-content,
 .index3_search_bar .res_search_box {
-  background: #cfac18;
+  background: #f1db33;
 }
 /* cor do corpo projeto */
 .index3_slider_wrapper
@@ -7167,7 +7168,7 @@ span.ovrly_text2 {
 
 /* cor do player */
 .index3_adoins_wrapper .adonis-player-horizontal {
-  background: #cfac18;
+  background: #f1db33;
 }
 .index3_adoins_wrapper .jp-seek-bar:before,
 .adonis-playlist-player .jp-seek-bar:before {
@@ -7675,6 +7676,7 @@ span.ovrly_text2 {
 .index4_top_songs_wrapper .various_artist_text a {
   color: rgba(255, 255, 255, 0.7) !important;
 }
+
 .slider-content {
   width: 100vw;
   height: 100vh;
@@ -7690,3 +7692,101 @@ span.ovrly_text2 {
   z-index: 0;
 }
 
+.prop-container {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.prop-image {
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* Container do blog usando Grid */
+/* Container do blog usando Grid */
+#blog-container {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(4, 1fr); /* Sempre mostra 4 colunas em telas maiores */
+  gap: 10px;
+  padding: 40px;
+ 
+}
+
+/* Estilos exclusivos para os cartões do blog */
+.custom-blog-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  width: 280px;
+  max-width: 330px;
+  flex-direction: column;
+  margin: 0 auto; /* Centraliza cada card individualmente */
+}
+
+/* Ajuste das imagens */
+.custom-blog-card img {
+  width: 100%;
+  height: 200px;  /* Define uma altura fixa para a imagem */
+  object-fit: cover;  /* Garante que a imagem mantenha suas proporções */
+}
+
+/* Conteúdo do card */
+.custom-blog-content {
+  padding: 15px;
+}
+
+/* Responsividade: 2 colunas em telas menores */
+@media (max-width: 1024px) {
+  #blog-container {
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas menores */
+    padding: 0 !important;
+  }
+}
+
+/* Responsividade: 1 coluna em telas muito pequenas */
+@media (max-width: 768px) {
+  #blog-container {
+    grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
+    padding: 0 !important;
+  }
+}
+
+
+
+/* Categoria do post */
+.custom-category {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Título do post */
+.custom-blog-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+/* Descrição do post */
+.custom-blog-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita a descrição a 3 linhas */
+  -webkit-box-orient: vertical;
+}
+
+/* Link para o site da notícia */
+.custom-blog-link {
+  color: #3498db;
+  text-decoration: underline;
+  font-size: 14px;
+}
