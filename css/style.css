@@ -7709,10 +7709,12 @@ span.ovrly_text2 {
 #blog-container {
   display: grid;
   width: 100vw;
-  grid-template-columns: repeat(4, 1fr); /* Sempre mostra 4 colunas em telas maiores */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Sempre mostra 4 colunas em telas maiores */
   gap: 10px;
   padding: 40px;
- 
 }
 
 /* Estilos exclusivos para os cartões do blog */
@@ -7731,8 +7733,8 @@ span.ovrly_text2 {
 /* Ajuste das imagens */
 .custom-blog-card img {
   width: 100%;
-  height: 200px;  /* Define uma altura fixa para a imagem */
-  object-fit: cover;  /* Garante que a imagem mantenha suas proporções */
+  height: 200px; /* Define uma altura fixa para a imagem */
+  object-fit: cover; /* Garante que a imagem mantenha suas proporções */
 }
 
 /* Conteúdo do card */
@@ -7754,9 +7756,67 @@ span.ovrly_text2 {
     grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
     padding: 0 !important;
   }
+  
+  .main_slider_wrapper {
+    height: 200px;
+    display: flex;
+    align-items: flex-start !important;
+    flex-direction: column;
+    top: 0 !important;
+    margin: 0;
+    padding: 0 !important;
+    background-color: #0f0e37;
+  }
+
+  .slider-content {
+  }
+
+  .slider-img {
+    
+  }
+}
+@media (max-width: 850px) {
+  #blog-container {
+    grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
+    padding: 0 !important;
+  }
+  .main_slider_wrapper {
+    height: auto;
+    display: flex;
+    align-items: flex-start !important;
+    flex-direction: column;
+    top: 0 !important;
+    margin: 0;
+    padding: 0 !important;
+    background-color: #0f0e37;
+  }
+
+  .slider-content {
+    margin: -200px 0;
+  }
+
+  .slider-img {
+  }
 }
 
-
+@media (min-width: 1600px) {
+  #blog-container {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Exibe 3 colunas em telas maiores que 1900px */
+  }
+  .main_slider_wrapper {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 !important;
+    background-color: #0f0e37;
+  }
+}
 
 /* Categoria do post */
 .custom-category {
@@ -7764,7 +7824,6 @@ span.ovrly_text2 {
   color: #888;
 }
 
-/* Título do post */
 .custom-blog-title {
   font-size: 18px;
   font-weight: bold;
