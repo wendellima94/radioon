@@ -7708,16 +7708,15 @@ span.ovrly_text2 {
 /* Container do blog usando Grid */
 #blog-container {
   display: grid;
-  width: 100vw;
+  width: 100%;
   grid-template-columns: repeat(
     4,
     1fr
-  ); /* Sempre mostra 4 colunas em telas maiores */
-  gap: 10px;
-  padding: 40px;
+  );
+  gap: 4px;
+  padding: 20px 10px;
 }
 
-/* Estilos exclusivos para os cartões do blog */
 .custom-blog-card {
   background-color: #fff;
   border-radius: 10px;
@@ -7727,33 +7726,30 @@ span.ovrly_text2 {
   width: 280px;
   max-width: 330px;
   flex-direction: column;
-  margin: 0 auto; /* Centraliza cada card individualmente */
+  margin: 0 auto;
 }
 
 /* Ajuste das imagens */
 .custom-blog-card img {
   width: 100%;
-  height: 200px; /* Define uma altura fixa para a imagem */
-  object-fit: cover; /* Garante que a imagem mantenha suas proporções */
+  height: 180px; 
+  object-fit: cover;
 }
 
-/* Conteúdo do card */
 .custom-blog-content {
-  padding: 15px;
+  padding: 40px 10px !important;
 }
 
-/* Responsividade: 2 colunas em telas menores */
 @media (max-width: 1024px) {
   #blog-container {
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas menores */
+    grid-template-columns: repeat(2, 1fr); 
     padding: 0 !important;
   }
 }
 
-/* Responsividade: 1 coluna em telas muito pequenas */
 @media (max-width: 768px) {
   #blog-container {
-    grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
+    grid-template-columns: 1fr;
     padding: 0 !important;
   }
   
@@ -7775,22 +7771,25 @@ span.ovrly_text2 {
     
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 780px) {
   #blog-container {
-    grid-template-columns: 1fr; /* Uma coluna para telas muito pequenas */
-    padding: 0 !important;
+    grid-template-columns: 1fr;
+    padding: 40px 0 !important;
+    height: 100%;
+  
   }
   .main_slider_wrapper {
-    height: auto;
+    height: 400px;
     display: flex;
     align-items: flex-start !important;
     flex-direction: column;
     top: 0 !important;
-    margin: 0;
+    margin-top: -100px !important;
     padding: 0 !important;
     background-color: #0f0e37;
   }
 
+  
   .slider-content {
     margin: -200px 0;
   }
@@ -7801,19 +7800,22 @@ span.ovrly_text2 {
 
 @media (min-width: 1600px) {
   #blog-container {
+    width: 100%;
     grid-template-columns: repeat(
-      3,
+      4,
       1fr
-    ); /* Exibe 3 colunas em telas maiores que 1900px */
+    );
+    align-items: center;
+    justify-items: center;
   }
   .main_slider_wrapper {
-    height: auto;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
     padding: 0 !important;
+    margin-top: -300px !important;
     background-color: #0f0e37;
   }
 }
