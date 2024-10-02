@@ -7792,75 +7792,71 @@ span.ovrly_text2 {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1280px) {
   #blog-container {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
+    
   }
   .main_slider_wrapper {
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 0 !important;
-    margin-top: -300px !important;
     background-color: #0f0e37;
   }
 }
 
-@media (min-width: 3840px) {
+@media (min-width: 2160px) and (min-height: 3840px) {
   #blog-container {
     grid-template-columns: 1fr;
-    padding: 40px 0 !important;
-    height: 100% !important;
+    padding: 100px 0 !important;
+    height: auto;
+    background-color: #000;
   }
 
   .main_slider_wrapper {
-    height: auto;
-    display: flex ;
-    align-items: flex-start !important;
+    height: 1500px; /* Preenche 100% da altura da tela */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; /* Garante que o conteúdo fique no topo */
     flex-direction: column;
-    top: 0 !important;
-    margin-top: -100px !important; /* Ajusta para garantir a posição correta abaixo do header */
+    margin-top: 0 !important; /* Remove a margem superior */
     padding: 0 !important;
-    background-color: #0f0e37; /* Cor de fundo conforme desejado */
+    background-color: #0f0e37; /* Cor de fundo */
   }
 
   .slider-content {
   }
 
   .slider-img {
-    width: 100%; /* Faz a imagem se ajustar à largura total do slider */
-    height: auto; /* Garante que a proporção da imagem seja mantida */
-    object-fit: cover; /* Preenche o container sem distorção */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do slider */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Preenche o container sem distorcer a imagem */
   }
 
-  /* Estilos adicionais para garantir responsividade do conteúdo textual dentro do slider */
   .carousel-captions {
     position: absolute;
-    top: 50%; /* Mantém o conteúdo centralizado verticalmente */
+    top: 20%; /* Ajusta a posição do texto para um pouco abaixo do topo */
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transform: translate(-50%, 0);
     text-align: center;
-    color: white; /* Exibe os textos em branco para maior contraste */
+    color: white; /* Exibe os textos em branco */
   }
 
-  .carousel-captions h1,
-  .carousel-captions h2,
-  .carousel-captions p {
-    font-size: 2.5rem; /* Ajusta o tamanho da fonte para a tela grande */
+  .carousel-captions h1, .carousel-captions h2, .carousel-captions p {
+    font-size: 3rem; /* Aumenta o tamanho da fonte para a resolução grande */
   }
 
   .carousel-item {
     position: relative;
-    height: 100vh; /* Garante que o item do carousel ocupe toda a altura da tela */
+    height: 100vh; /* Cada item do carousel ocupa 100% da altura da tela */
   }
 
-  /* Estilos para garantir o comportamento responsivo */
   .carousel-item.active .slider-img {
     width: 100%;
     height: auto;
