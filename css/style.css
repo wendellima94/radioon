@@ -7857,7 +7857,7 @@ span.ovrly_text2 {
     display: flex;
     align-items: center;
     justify-content: center; /* Garante que o conteúdo fique no topo */
-    background-color: #0f0e37; /* Cor de fundo */
+    background-color: #000; /* Cor de fundo */
 
     margin-top: 0 !important; /* Remove a margem superior */
     padding-top: 130px !important;
