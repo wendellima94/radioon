@@ -7711,6 +7711,7 @@ span.ovrly_text2 {
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
+
   padding: 20px 10px;
 }
 
@@ -7741,37 +7742,16 @@ span.ovrly_text2 {
   #blog-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 !important;
+
   }
 }
 
-@media (max-width: 768px) {
-  #blog-container {
-    grid-template-columns: 1fr;
-    padding: 0 !important;
-  }
-
-  .main_slider_wrapper {
-    height: 200px;
-    display: flex;
-    align-items: flex-start !important;
-    flex-direction: column;
-    top: 0 !important;
-    margin: 0;
-    padding: 0 !important;
-    background-color: #0f0e37;
-  }
-
-  .slider-content {
-  }
-
-  .slider-img {
-  }
-}
 @media (max-width: 780px) {
   #blog-container {
     grid-template-columns: 1fr;
     padding: 40px 0 !important;
     height: 100%;
+    
   }
   .main_slider_wrapper {
     height: 400px;
@@ -7798,7 +7778,7 @@ span.ovrly_text2 {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
-    
+
   }
   .main_slider_wrapper {
     height: auto;
@@ -7824,7 +7804,7 @@ span.ovrly_text2 {
     align-items: flex-start;
     justify-content: flex-start; /* Garante que o conteúdo fique no topo */
     flex-direction: column;
-    margin-top: 0 !important; /* Remove a margem superior */
+    margin-top: -1100px !important; /* Remove a margem superior */
     padding: 0 !important;
     background-color: #0f0e37; /* Cor de fundo */
   }
@@ -7847,7 +7827,9 @@ span.ovrly_text2 {
     color: white; /* Exibe os textos em branco */
   }
 
-  .carousel-captions h1, .carousel-captions h2, .carousel-captions p {
+  .carousel-captions h1,
+  .carousel-captions h2,
+  .carousel-captions p {
     font-size: 3rem; /* Aumenta o tamanho da fonte para a resolução grande */
   }
 
@@ -7862,53 +7844,45 @@ span.ovrly_text2 {
   }
 }
 
-
+/* NAO É ESSE QUE ALTERA O TOTEM */
 @media (min-width: 768px) {
   #blog-container {
-    grid-template-columns: 1fr;
-    height: 100%;
-    padding: 80px 0 !important;
-    background-color: #000;
+    grid-template-columns: 1, 4fr;
+    padding: 80px 10px !important;
+
   }
 
   .main_slider_wrapper {
-    height: auto; /* Preenche 100% da altura da tela */
+    height: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start; /* Garante que o conteúdo fique no topo */
-    flex-direction: column;
-    margin-top: -600px !important; /* Remove a margem superior */
-    padding: 0 !important;
+    align-items: center;
+    justify-content: center; /* Garante que o conteúdo fique no topo */
     background-color: #0f0e37; /* Cor de fundo */
+
+    margin-top: 0 !important; /* Remove a margem superior */
+    padding-top: 130px !important;
   }
 
   .slider-content {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do slider */
-    padding: 30px;
+    
   }
 
   .slider-img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do slider */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Preenche o container sem distorcer a imagem */
+    width: 100%; 
+    height: auto !important; 
+    object-fit: cover;
   }
 
-  .carousel-captions {
-    position: absolute;
-    top: 20%; /* Ajusta a posição do texto para um pouco abaixo do topo */
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    color: white; /* Exibe os textos em branco */
-  }
 
-  .carousel-captions h1, .carousel-captions h2, .carousel-captions p {
+  .carousel-captions h1,
+  .carousel-captions h2,
+  .carousel-captions p {
     font-size: 3rem; /* Aumenta o tamanho da fonte para a resolução grande */
   }
 
   .carousel-item {
     position: relative;
-    height: 100vh; /* Cada item do carousel ocupa 100% da altura da tela */
+    height: 100%; /* Cada item do carousel ocupa 100% da altura da tela */
   }
 
   .carousel-item.active .slider-img {
@@ -7916,8 +7890,6 @@ span.ovrly_text2 {
     height: auto;
   }
 }
-
-
 
 /* Categoria do post */
 .custom-category {
@@ -7944,7 +7916,6 @@ span.ovrly_text2 {
   -webkit-box-orient: vertical;
 }
 
-/* Link para o site da notícia */
 .custom-blog-link {
   color: #3498db;
   text-decoration: underline;
