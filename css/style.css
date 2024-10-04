@@ -7793,7 +7793,7 @@ span.ovrly_text2 {
 
 
 
-@media(min-width: 1800px) {
+@media(min-width: 910px) {
   #blog-container {
     grid-template-columns: 1fr;
     padding: 100px 0 !important;
