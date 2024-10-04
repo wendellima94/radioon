@@ -7793,7 +7793,7 @@ span.ovrly_text2 {
 
 
 
-@media (min-width: 2160px) and (min-height: 3840px) {
+@media(min-width: 1800px) {
   #blog-container {
     grid-template-columns: 1fr;
     padding: 100px 0 !important;
@@ -7807,7 +7807,7 @@ span.ovrly_text2 {
     align-items: flex-start;
     justify-content: flex-start; /* Garante que o conteúdo fique no topo */
     flex-direction: column;
-    margin-top: -2000px !important; /* Remove a margem superior */
+    margin-top: -700px !important; /* Remove a margem superior */
     padding: 0 !important;
     background-color: #0f0e37; /* Cor de fundo */
   }
