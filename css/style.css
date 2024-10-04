@@ -7791,25 +7791,29 @@ span.ovrly_text2 {
   }
 }
 
+
+
 @media (min-width: 2160px) and (min-height: 3840px) {
   #blog-container {
     grid-template-columns: 1fr;
     padding: 100px 0 !important;
     height: auto;
+    background-color: #fff !important;
   }
 
   .main_slider_wrapper {
-    height: 1500px; /* Preenche 100% da altura da tela */
+    height: auto; /* Preenche 100% da altura da tela */
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; /* Garante que o conteúdo fique no topo */
     flex-direction: column;
-    margin-top: -1100px !important; /* Remove a margem superior */
+    margin-top: -2000px !important; /* Remove a margem superior */
     padding: 0 !important;
     background-color: #0f0e37; /* Cor de fundo */
   }
 
   .slider-content {
+    height: 100%;
   }
 
   .slider-img {
@@ -7842,82 +7846,4 @@ span.ovrly_text2 {
     width: 100%;
     height: auto;
   }
-}
-
-/* NAO É ESSE QUE ALTERA O TOTEM */
-@media (min-width: 768px) {
-  #blog-container {
-    grid-template-columns: 1, 4fr;
-    padding: 80px 10px !important;
-
-  }
-
-  .main_slider_wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Garante que o conteúdo fique no topo */
-    background-color: #000; /* Cor de fundo */
-
-    margin-top: 0 !important; /* Remove a margem superior */
-    padding-top: 130px !important;
-  }
-
-  .slider-content {
-    
-  }
-
-  .slider-img {
-    width: 100%; 
-    height: auto !important; 
-    object-fit: cover;
-  }
-
-
-  .carousel-captions h1,
-  .carousel-captions h2,
-  .carousel-captions p {
-    font-size: 3rem; /* Aumenta o tamanho da fonte para a resolução grande */
-  }
-
-  .carousel-item {
-    position: relative;
-    height: 100%; /* Cada item do carousel ocupa 100% da altura da tela */
-  }
-
-  .carousel-item.active .slider-img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Categoria do post */
-.custom-category {
-  font-size: 12px;
-  color: #888;
-}
-
-.custom-blog-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
-  line-height: 1.2;
-}
-
-/* Descrição do post */
-.custom-blog-description {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #555;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limita a descrição a 3 linhas */
-  -webkit-box-orient: vertical;
-}
-
-.custom-blog-link {
-  color: #3498db;
-  text-decoration: underline;
-  font-size: 14px;
 }
