@@ -7803,12 +7803,12 @@ span.ovrly_text2 {
 
   .main_slider_wrapper {
     height: auto; /* Preenche 100% da altura da tela */
+    position: absolute;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; /* Garante que o conteúdo fique no topo */
     flex-direction: column;
-    margin-top: -700px !important; /* Remove a margem superior */
-    padding: 0 !important;
+    padding-top: 100px !important;
     background-color: #0f0e37; /* Cor de fundo */
   }
 
