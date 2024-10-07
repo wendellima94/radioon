@@ -7152,7 +7152,8 @@ span.ovrly_text2 {
   color: rgba(255, 255, 255, 0.5);
 }
 .index3_index_top_wrapper li a {
-  color: rgba(255, 255, 255, 0.3);
+  /* color: rgba(255, 255, 255, 0.3); */
+  color: #0f0e37;
 }
 .index3_border_none {
   border-bottom: 0;
@@ -7163,7 +7164,7 @@ span.ovrly_text2 {
 }
 .foter_top_wrapper li a,
 .index3_lang_wrapper .lang_list_checkbox li {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #0f0e37;
 }
 
 /* cor do player */
@@ -7677,33 +7678,6 @@ span.ovrly_text2 {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-.slider-content {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider-img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-  z-index: 0;
-}
-
-.prop-container {
-  display: flex;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-}
-
-.prop-image {
-  width: 100vw;
-  object-fit: cover;
-}
-
 /* Container do blog usando Grid */
 /* Container do blog usando Grid */
 #blog-container {
@@ -7881,4 +7855,74 @@ carousel {
 /* Estilo adicional para tornar o slider fixo */
 input:focus ~ .keys {
   opacity: 0.8;
+}
+
+/* scroll bar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ffe400;
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffe400;
+  border-radius: 50px;
+}
+
+.slider-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.prop-container {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.prop-image {
+  width: 100vw;
+  object-fit: cover;
+}
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1; /* Garante que os botões fiquem acima das imagens */
+}
+
+button.prev {
+  left: 10px; /* Botão da esquerda */
+}
+
+button.next {
+  right: 10px; /* Botão da direita */
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Efeito de hover */
 }
