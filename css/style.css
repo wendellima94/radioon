@@ -7793,7 +7793,7 @@ span.ovrly_text2 {
 
 
 
-@media(min-width: 910px) {
+@media(max-width: 912px) {
   #blog-container {
     grid-template-columns: 1fr;
     padding: 100px 0 !important;
@@ -7803,12 +7803,11 @@ span.ovrly_text2 {
 
   .main_slider_wrapper {
     height: auto; /* Preenche 100% da altura da tela */
-    position: absolute;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; /* Garante que o conteúdo fique no topo */
     flex-direction: column;
-    padding-top: 100px !important;
+    padding: 0 !important;
     background-color: #0f0e37; /* Cor de fundo */
   }
 
@@ -7846,4 +7845,40 @@ span.ovrly_text2 {
     width: 100%;
     height: auto;
   }
+}
+
+carousel {
+  position: fixed;
+  top: 60px; /* Altura do cabeçalho */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Para manter o slider abaixo do cabeçalho */
+}
+
+.carousel-item {
+  height: calc(100vh - 60px); /* Altura total da tela menos a altura do cabeçalho */
+}
+
+.carousel-item img {
+  object-fit: contain; /* Faz as imagens cobrir o espaço */
+  width: 100vw;
+  height: 100vh;
+}
+
+.keys {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  transition: all 300ms linear;
+  opacity: 0;
+}
+
+/* Estilo adicional para tornar o slider fixo */
+input:focus ~ .keys {
+  opacity: 0.8;
 }
