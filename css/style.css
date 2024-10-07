@@ -4368,6 +4368,28 @@ body.off-canvas-overlay-on {
 }
 
 @media (max-width: 767px) {
+  
+button.prev, button.next {
+  position: fixed;
+  top: 30% !important;
+  transform: translateY(-50%);
+  background-color: transparent !important; 
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1; 
+}
+
+button.prev {
+  left: 10px; 
+}
+
+button.next {
+  right: 10px; 
+}
+
   .adonis-player-wrap .adonis-playlist.off-canvas-right.show {
     transform: translate(-100%, 0);
   }
@@ -7902,27 +7924,28 @@ input:focus ~ .keys {
   width: 100vw;
   object-fit: cover;
 }
+
 button.prev, button.next {
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5); 
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   font-size: 18px;
-  z-index: 1; /* Garante que os botões fiquem acima das imagens */
+  z-index: 1; 
 }
 
 button.prev {
-  left: 10px; /* Botão da esquerda */
+  left: 10px; 
 }
 
 button.next {
-  right: 10px; /* Botão da direita */
+  right: 10px; 
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Efeito de hover */
+  background-color: #f1db33; /* Efeito de hover */
 }
