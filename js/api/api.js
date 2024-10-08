@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Faz a chamada para a API
-  fetch("https://api-portal-axli.onrender.com/api/v1/terra-sports/data")
+  fetch("https://api-portal-axli.onrender.com/api/v1/horoscope/data")
     .then((response) => response.json())
     .then((data) => {
       const blogContainer = document.getElementById("blog-container");
