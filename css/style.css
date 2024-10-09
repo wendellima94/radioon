@@ -4128,6 +4128,9 @@ body.off-canvas-overlay-on {
 .adonis-player-wrap .adonis-playlist .jp-playlist .meta {
   float: right;
 }
+.jp-time {
+  display: none;
+}
 .adonis-player-wrap .adonis-playlist .jp-playlist .description {
   flex: 100%;
 }
@@ -4460,6 +4463,7 @@ button.next {
   width: 0;
 }
 .adonis-icon {
+  color: #000;
   line-height: 0;
   display: inline-block;
   vertical-align: middle;
