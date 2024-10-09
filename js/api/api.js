@@ -42,7 +42,7 @@ function showImage(index) {
     img.style.display = 'none';
     if (i === index) {
       img.classList.add('active');
-      img.style.display = 'block'; // Exibe a imagem atual
+      img.style.display = 'block';
     }
   });
 }
@@ -57,5 +57,4 @@ function prevImage() {
   showImage(currentImageIndex);
 }
 
-// Troca automática a cada 3 segundos
 setInterval(nextImage, 5000);
